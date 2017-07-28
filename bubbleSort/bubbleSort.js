@@ -22,5 +22,17 @@
 */
 
 const bubbleSort = (arr) => {
-  //code here
+  let newArray = arr.length;
+  for (let i = newArray - 1; i >= 0; i--) {
+    for (let x = 1; x <= i; x++) {
+      if (arr[x - 1] > arr[x]) {
+        let sortedArray = arr[x - 1];
+        arr[x - 1] = arr[x];
+        arr[x] = sortedArray;
+      }
+    }
+  }
+  return arr; 
 };
+
+console.log(bubbleSort([2,1,3]));

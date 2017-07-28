@@ -5,15 +5,16 @@
  *
  */
 
-const mulitply = (x, y) => {
-  let total;
+const multiply = (x, y) => {
+  let total = 0;
 
   for (let i = 0; i < x; i++) {
     total += y;
   } 
+  return total;
 }
 
-console.log(multiply(2,4));
+console.log(multiply(15000,434));
 
 const divide = (x, y) => {
 
