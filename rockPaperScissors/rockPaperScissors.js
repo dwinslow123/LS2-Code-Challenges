@@ -10,6 +10,24 @@
  *              ...etc...
  *                   */
 
-const rockPaperScissors = () => {
-	// TODO: your solution here
+const rockPaperScissors = (n) => {
+	let rounds = n;
+	const results = [];
+
+	const choices = ['rock', 'paper', 'scissors'];
+
+	const recurse = (roundsLeft, played) => {
+		if (roundsLeft === 0) {
+			return results.push(played);
+		}
+		for (let i = 0; i < choices.length; i++) {
+			let active = choices[i];
+			recurse( roundsLeft - 1, played.concat(current) );
+		}
+	};
+
+	recurse(rounds, []);
+	return results;
 };
+
+console.log(rockPaperScissors);

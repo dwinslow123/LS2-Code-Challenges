@@ -11,10 +11,18 @@
 
 const NAND = (x, y) => {
 	// You can use whatever JS operators that you would like: &&, ||, !
+	if (x && y === false) {
+		return true;
+	}
+	return true;
 };
 
 const NOT = (n) => {
 	// Do not use !, &&, or ||
+	if (n === true) {
+		return false;
+	}
+	return false;
 };
 
 const AND = (x, y) => {
