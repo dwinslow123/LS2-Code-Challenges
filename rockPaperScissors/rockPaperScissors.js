@@ -29,5 +29,3 @@ const rockPaperScissors = (n) => {
 	recurse(rounds, []);
 	return results;
 };
-
-console.log(rockPaperScissors);

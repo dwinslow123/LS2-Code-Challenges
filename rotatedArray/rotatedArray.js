@@ -1,6 +1,14 @@
 /*
  * Given a sorted array that has been rotated some number of items right or
- * left, i.e. [0, 1, 2, 3, 4, 5, 6, 7] might become [4, 5, 6, 7, 0, 1, 2, 3]
+ * left, i.e. 
+ *            [0, 1, 2, 3,
+  *            4, 5, 6, 7] 
+
+              might become
+
+              [4, 5, 6, 7,
+  *            0, 1, 2, 3] 
+
  * how can you efficiently find an element? For simplicity, you can assume
  * that there are no duplicate elements in the array.
  *
@@ -14,3 +22,7 @@
  *
  * Target time complexity: O(log(n))
  */
+
+const rotatedArray = (arr, i) => {
+  
+}
