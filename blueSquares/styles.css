@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+;
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.squares {
+  display: flex;
+  flex-wrap: wrap;
+  width: 8.333rem;
+  height: 8.333rem;
+  background-color: #FF0000;
+  margin: 1rem;
+}
+
+.squares.blue {
+  background-color: #0000FF;
+}
