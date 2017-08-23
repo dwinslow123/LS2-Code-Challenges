@@ -13,6 +13,7 @@ body {
   height: 8.333rem;
   background-color: #FF0000;
   margin: 1rem;
+  text-align: center;
 }
 
 .squares.blue {
